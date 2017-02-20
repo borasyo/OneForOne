@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{14C2E020-DE70-4452-ACFA-A68AEC1B22C2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DX_Unity</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Library\DirectX\Direct3D.cpp" />
+    <ClCompile Include="Library\DirectX\DirectInputManager.cpp" />
+    <ClCompile Include="Library\DirectX\DirectSound.cpp" />
+    <ClCompile Include="Library\DirectX\JoyStick.cpp" />
+    <ClCompile Include="Library\DirectX\MouthPosition.cpp" />
+    <ClCompile Include="Library\DirectX\Window.cpp" />
+    <ClCompile Include="Library\ObjectData\AnimationController.cpp" />
+    <ClCompile Include="Library\ObjectData\AnimationMeshDrawer.cpp" />
+    <ClCompile Include="Library\ObjectData\D3DXAllocateHierarchy.cpp" />
+    <ClCompile Include="Library\ObjectData\FrameMatrixTransformer.cpp" />
+    <ClCompile Include="Library\ObjectData\LightIndex.cpp" />
+    <ClCompile Include="Library\ObjectData\Model.cpp" />
+    <ClCompile Include="Library\ObjectData\ModelManager.cpp" />
+    <ClCompile Include="Library\ObjectData\TextureManager.cpp" />
+    <ClCompile Include="Library\ObjectType\Collision.cpp" />
+    <ClCompile Include="Library\ObjectType\Object2D.cpp" />
+    <ClCompile Include="Library\ObjectType\Object3D_Model.cpp" />
+    <ClCompile Include="Library\ObjectType\Object3D_Polygon.cpp" />
+    <ClCompile Include="Library\ObjectType\ObjectCamera.cpp" />
+    <ClCompile Include="Library\ObjectType\ObjectDirectionLight.cpp" />
+    <ClCompile Include="Library\ObjectType\ObjectPointLight.cpp" />
+    <ClCompile Include="Library\ObjectType\ObjectSpotLight.cpp" />
+    <ClCompile Include="Library\Task\Empty.cpp" />
+    <ClCompile Include="Library\Task\GameObject.cpp" />
+    <ClCompile Include="Library\Task\Hierarchy.cpp" />
+    <ClCompile Include="Library\Task\SceneManager.cpp" />
+    <ClCompile Include="Main\GameBase.cpp" />
+    <ClCompile Include="Main\main.cpp" />
+    <ClCompile Include="Object\ActionStop.cpp" />
+    <ClCompile Include="Object\ActionStopParent.cpp" />
+    <ClCompile Include="Object\BackWall.cpp" />
+    <ClCompile Include="Object\Beam.cpp" />
+    <ClCompile Include="Object\BeamCamera.cpp" />
+    <ClCompile Include="Object\BeamHolder.cpp" />
+    <ClCompile Include="Object\BeamParent.cpp" />
+    <ClCompile Include="Object\Blood.cpp" />
+    <ClCompile Include="Object\BloodParent.cpp" />
+    <ClCompile Include="Object\BulletFog.cpp" />
+    <ClCompile Include="Object\BulletFogParent.cpp" />
+    <ClCompile Include="Object\CameraSelect.cpp" />
+    <ClCompile Include="Object\CleaveImpact.cpp" />
+    <ClCompile Include="Object\CleaveImpactParent.cpp" />
+    <ClCompile Include="Object\CollisionEasyMode.cpp" />
+    <ClCompile Include="Object\CollisionHardMode.cpp" />
+    <ClCompile Include="Object\CollisionNormalMode.cpp" />
+    <ClCompile Include="Object\Danger.cpp" />
+    <ClCompile Include="Object\Deathblow.cpp" />
+    <ClCompile Include="Object\DeathblowCamera.cpp" />
+    <ClCompile Include="Object\DeathblowEffect.cpp" />
+    <ClCompile Include="Object\Devil.cpp" />
+    <ClCompile Include="Object\Dragon.cpp" />
+    <ClCompile Include="Object\DragonMeteo.cpp" />
+    <ClCompile Include="Object\DragonMeteoParent.cpp" />
+    <ClCompile Include="Object\DragonParent.cpp" />
+    <ClCompile Include="Object\EasyBotton.cpp" />
+    <ClCompile Include="Object\ExitBotton.cpp" />
+    <ClCompile Include="Object\FadeIn.cpp" />
+    <ClCompile Include="Object\FadeOut.cpp" />
+    <ClCompile Include="Object\FarAtack.cpp" />
+    <ClCompile Include="Object\FarAtackFire.cpp" />
+    <ClCompile Include="Object\Field.cpp" />
+    <ClCompile Include="Object\FieldCollision.cpp" />
+    <ClCompile Include="Object\FieldFlower.cpp" />
+    <ClCompile Include="Object\Fire.cpp" />
+    <ClCompile Include="Object\FireExplosion.cpp" />
+    <ClCompile Include="Object\FireExplosionParent.cpp" />
+    <ClCompile Include="Object\FireParent.cpp" />
+    <ClCompile Include="Object\Floor.cpp" />
+    <ClCompile Include="Object\FrontWall.cpp" />
+    <ClCompile Include="Object\GameClear.cpp" />
+    <ClCompile Include="Object\GameClearCamera.cpp" />
+    <ClCompile Include="Object\GameClearFog.cpp" />
+    <ClCompile Include="Object\GameClearFogParent.cpp" />
+    <ClCompile Include="Object\GameOver.cpp" />
+    <ClCompile Include="Object\HardBotton.cpp" />
+    <ClCompile Include="Object\HelpBotton.cpp" />
+    <ClCompile Include="Object\HelpMenu.cpp" />
+    <ClCompile Include="Object\InvincibleCamera.cpp" />
+    <ClCompile Include="Object\Item.cpp" />
+    <ClCompile Include="Object\ItemCollision.cpp" />
+    <ClCompile Include="Object\ItemFog.cpp" />
+    <ClCompile Include="Object\ItemFogParent.cpp" />
+    <ClCompile Include="Object\LeftWall.cpp" />
+    <ClCompile Include="Object\MainMenu.cpp" />
+    <ClCompile Include="Object\MainMenuCollision.cpp" />
+    <ClCompile Include="Object\MainMenuTitle.cpp" />
+    <ClCompile Include="Object\Meteo.cpp" />
+    <ClCompile Include="Object\MeteoParent.cpp" />
+    <ClCompile Include="Object\NearAtack.cpp" />
+    <ClCompile Include="Object\NearAtackAnimation.cpp" />
+    <ClCompile Include="Object\NearAtackAnimationParent.cpp" />
+    <ClCompile Include="Object\NearAtackImpact.cpp" />
+    <ClCompile Include="Object\NearAtackImpactParent.cpp" />
+    <ClCompile Include="Object\NormalBotton.cpp" />
+    <ClCompile Include="Object\Pause.cpp" />
+    <ClCompile Include="Object\Player.cpp" />
+    <ClCompile Include="Object\PlayerCamera.cpp" />
+    <ClCompile Include="Object\PlayerFog.cpp" />
+    <ClCompile Include="Object\PlayerFogParent.cpp" />
+    <ClCompile Include="Object\PlayerUI.cpp" />
+    <ClCompile Include="Object\Rader.cpp" />
+    <ClCompile Include="Object\RightWall.cpp" />
+    <ClCompile Include="Object\Shadow.cpp" />
+    <ClCompile Include="Object\ShadowBall.cpp" />
+    <ClCompile Include="Object\SkeletonBulletParent.cpp" />
+    <ClCompile Include="Object\SkeltonBullet.cpp" />
+    <ClCompile Include="Object\SkeltonCorps.cpp" />
+    <ClCompile Include="Object\SkeltonCorpsParent.cpp" />
+    <ClCompile Include="Object\SkyDome.cpp" />
+    <ClCompile Include="Object\SlashCenter.cpp" />
+    <ClCompile Include="Object\SlashLeft.cpp" />
+    <ClCompile Include="Object\SlashRight.cpp" />
+    <ClCompile Include="Object\Time.cpp" />
+    <ClCompile Include="Object\Tree.cpp" />
+    <ClCompile Include="Object\Wizard.cpp" />
+    <ClCompile Include="Object\WizardFog.cpp" />
+    <ClCompile Include="Object\WizardFogParent.cpp" />
+    <ClCompile Include="Object\WizardImpact.cpp" />
+    <ClCompile Include="Object\WizardImpactParent.cpp" />
+    <ClCompile Include="Object\WizardWeapon.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Library\Debug\DebugWindow.h" />
+    <ClInclude Include="Library\Debug\FPSController.h" />
+    <ClInclude Include="Library\Debug\MemoryLeakDebug.h" />
+    <ClInclude Include="Library\DirectX\Direct3D.h" />
+    <ClInclude Include="Library\DirectX\DirectInputManager.h" />
+    <ClInclude Include="Library\DirectX\DirectSound.h" />
+    <ClInclude Include="Library\DirectX\JoyStick.h" />
+    <ClInclude Include="Library\DirectX\MouthPosition.h" />
+    <ClInclude Include="Library\DirectX\Window.h" />
+    <ClInclude Include="Library\ObjectData\AnimationController.h" />
+    <ClInclude Include="Library\ObjectData\AnimationMeshDrawer.h" />
+    <ClInclude Include="Library\ObjectData\D3DXAllocateHierarchy.h" />
+    <ClInclude Include="Library\ObjectData\FrameMatrixTransformer.h" />
+    <ClInclude Include="Library\ObjectData\LightIndex.h" />
+    <ClInclude Include="Library\ObjectData\Model.h" />
+    <ClInclude Include="Library\ObjectData\ModelManager.h" />
+    <ClInclude Include="Library\ObjectData\TextureManager.h" />
+    <ClInclude Include="Library\ObjectType\Collision.h" />
+    <ClInclude Include="Library\ObjectType\Object2D.h" />
+    <ClInclude Include="Library\ObjectType\Object3D_Model.h" />
+    <ClInclude Include="Library\ObjectType\Object3D_Polygon.h" />
+    <ClInclude Include="Library\ObjectType\ObjectCamera.h" />
+    <ClInclude Include="Library\ObjectType\ObjectDirectionLight.h" />
+    <ClInclude Include="Library\ObjectType\ObjectPointLight.h" />
+    <ClInclude Include="Library\ObjectType\ObjectSpotLight.h" />
+    <ClInclude Include="Library\Task\Empty.h" />
+    <ClInclude Include="Library\Task\GameObject.h" />
+    <ClInclude Include="Library\Task\Hierarchy.h" />
+    <ClInclude Include="Library\Task\SceneManager.h" />
+    <ClInclude Include="Main\GameBase.h" />
+    <ClInclude Include="Object\ActionStop.h" />
+    <ClInclude Include="Object\ActionStopParent.h" />
+    <ClInclude Include="Object\BackWall.h" />
+    <ClInclude Include="Object\Beam.h" />
+    <ClInclude Include="Object\BeamCamera.h" />
+    <ClInclude Include="Object\BeamHolder.h" />
+    <ClInclude Include="Object\BeamParent.h" />
+    <ClInclude Include="Object\Blood.h" />
+    <ClInclude Include="Object\BloodParent.h" />
+    <ClInclude Include="Object\BulletFog.h" />
+    <ClInclude Include="Object\BulletFogParent.h" />
+    <ClInclude Include="Object\CameraSelect.h" />
+    <ClInclude Include="Object\CleaveImpact.h" />
+    <ClInclude Include="Object\CleaveImpactParent.h" />
+    <ClInclude Include="Object\CollisionEasyMode.h" />
+    <ClInclude Include="Object\CollisionHardMode.h" />
+    <ClInclude Include="Object\CollisionNormalMode.h" />
+    <ClInclude Include="Object\Danger.h" />
+    <ClInclude Include="Object\Deathblow.h" />
+    <ClInclude Include="Object\DeathblowCamera.h" />
+    <ClInclude Include="Object\DeathblowEffect.h" />
+    <ClInclude Include="Object\Devil.h" />
+    <ClInclude Include="Object\Dragon.h" />
+    <ClInclude Include="Object\DragonMeteo.h" />
+    <ClInclude Include="Object\DragonMeteoParent.h" />
+    <ClInclude Include="Object\DragonParent.h" />
+    <ClInclude Include="Object\EasyBotton.h" />
+    <ClInclude Include="Object\ExitBotton.h" />
+    <ClInclude Include="Object\FadeIn.h" />
+    <ClInclude Include="Object\FadeOut.h" />
+    <ClInclude Include="Object\FarAtack.h" />
+    <ClInclude Include="Object\FarAtackFire.h" />
+    <ClInclude Include="Object\Field.h" />
+    <ClInclude Include="Object\FieldCollision.h" />
+    <ClInclude Include="Object\FieldFlower.h" />
+    <ClInclude Include="Object\FieldStone.h" />
+    <ClInclude Include="Object\Fire.h" />
+    <ClInclude Include="Object\FireExplosion.h" />
+    <ClInclude Include="Object\FireExplosionParent.h" />
+    <ClInclude Include="Object\FireParent.h" />
+    <ClInclude Include="Object\Floor.h" />
+    <ClInclude Include="Object\FrontWall.h" />
+    <ClInclude Include="Object\GameClear.h" />
+    <ClInclude Include="Object\GameClearCamera.h" />
+    <ClInclude Include="Object\GameClearFog.h" />
+    <ClInclude Include="Object\GameClearFogParent.h" />
+    <ClInclude Include="Object\GameOver.h" />
+    <ClInclude Include="Object\HardBotton.h" />
+    <ClInclude Include="Object\HelpBotton.h" />
+    <ClInclude Include="Object\HelpMenu.h" />
+    <ClInclude Include="Object\InvincibleCamera.h" />
+    <ClInclude Include="Object\Item.h" />
+    <ClInclude Include="Object\ItemCollision.h" />
+    <ClInclude Include="Object\ItemFog.h" />
+    <ClInclude Include="Object\ItemFogParent.h" />
+    <ClInclude Include="Object\LeftWall.h" />
+    <ClInclude Include="Object\MainLight.h" />
+    <ClInclude Include="Object\MainLightLL.h" />
+    <ClInclude Include="Object\MainLightLR.h" />
+    <ClInclude Include="Object\MainLightRL.h" />
+    <ClInclude Include="Object\MainLightRR.h" />
+    <ClInclude Include="Object\MainMenu.h" />
+    <ClInclude Include="Object\MainMenuCollision.h" />
+    <ClInclude Include="Object\MainMenuTitle.h" />
+    <ClInclude Include="Object\Meteo.h" />
+    <ClInclude Include="Object\MeteoParent.h" />
+    <ClInclude Include="Object\NearAtack.h" />
+    <ClInclude Include="Object\NearAtackAnimation.h" />
+    <ClInclude Include="Object\NearAtackAnimationParent.h" />
+    <ClInclude Include="Object\NearAtackImpact.h" />
+    <ClInclude Include="Object\NearAtackImpactParent.h" />
+    <ClInclude Include="Object\NormalBotton.h" />
+    <ClInclude Include="Object\Pause.h" />
+    <ClInclude Include="Object\Player.h" />
+    <ClInclude Include="Object\PlayerCamera.h" />
+    <ClInclude Include="Object\PlayerFog.h" />
+    <ClInclude Include="Object\PlayerFogParent.h" />
+    <ClInclude Include="Object\PlayerUI.h" />
+    <ClInclude Include="Object\Rader.h" />
+    <ClInclude Include="Object\RightWall.h" />
+    <ClInclude Include="Object\Shadow.h" />
+    <ClInclude Include="Object\ShadowBall.h" />
+    <ClInclude Include="Object\SkeletonBulletParent.h" />
+    <ClInclude Include="Object\SkeltonBullet.h" />
+    <ClInclude Include="Object\SkeltonCorps.h" />
+    <ClInclude Include="Object\SkeltonCorpsParent.h" />
+    <ClInclude Include="Object\SkyDome.h" />
+    <ClInclude Include="Object\SlashCenter.h" />
+    <ClInclude Include="Object\SlashLeft.h" />
+    <ClInclude Include="Object\SlashRight.h" />
+    <ClInclude Include="Object\Test2D.h" />
+    <ClInclude Include="Object\Test3D.h" />
+    <ClInclude Include="Object\TestBuff.h" />
+    <ClInclude Include="Object\TestCamera.h" />
+    <ClInclude Include="Object\TestLight.h" />
+    <ClInclude Include="Object\Time.h" />
+    <ClInclude Include="Object\Tree.h" />
+    <ClInclude Include="Object\Wizard.h" />
+    <ClInclude Include="Object\WizardFog.h" />
+    <ClInclude Include="Object\WizardFogParent.h" />
+    <ClInclude Include="Object\WizardImpact.h" />
+    <ClInclude Include="Object\WizardImpactParent.h" />
+    <ClInclude Include="Object\WizardWeapon.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

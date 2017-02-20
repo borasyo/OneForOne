@@ -1,0 +1,864 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{3cc6b705-6fda-40f0-af94-c30997846c02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Debug">
+      <UniqueIdentifier>{83086a75-d56a-40a1-9639-6d5ff3d16508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\ObjectType">
+      <UniqueIdentifier>{9890a705-716c-459f-ad87-e07dd1c68081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\ObjectData">
+      <UniqueIdentifier>{d28bda2e-ccfc-4363-ad5e-bc10ac6a9951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Task">
+      <UniqueIdentifier>{8256d4b8-6fe3-40b1-ab11-1f041e10172d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\DirectX">
+      <UniqueIdentifier>{e3e191e5-0530-467e-b289-72afe501b5f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{bade859d-5b60-436a-88ca-621112826ae3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Player">
+      <UniqueIdentifier>{4eed214d-87f4-48e9-bcd6-38101caddcf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Test">
+      <UniqueIdentifier>{e55c206e-affb-466a-9c49-eb8bf5c609da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Field">
+      <UniqueIdentifier>{ce7309d8-f20a-4b75-a48b-009f7bf8befb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Shadow">
+      <UniqueIdentifier>{270cfae2-b794-4108-b6d1-5bcf665bb621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Collision">
+      <UniqueIdentifier>{bb7e9fb9-01c6-468c-9aed-1c586d2ff67a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Effect">
+      <UniqueIdentifier>{0a316b18-879e-4f7e-831c-2a185be03b7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Effect\Player">
+      <UniqueIdentifier>{7da5f0f8-1a43-4c64-a281-5d4bcd8a3048}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Boss">
+      <UniqueIdentifier>{f8f14f13-4d7d-40b2-afab-978c146a74f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Effect\Enemy">
+      <UniqueIdentifier>{28ae4243-96cf-4b76-9950-78393aa2e057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Light">
+      <UniqueIdentifier>{2c51792a-7784-4a86-ae5f-f07b490f97e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Boss\Wizard">
+      <UniqueIdentifier>{f2ec759f-72c3-45a0-8f60-bc2f5c14232e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Boss\Devil">
+      <UniqueIdentifier>{3a89a6f3-a061-413f-bd36-bf63fbd2384c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Effect\All">
+      <UniqueIdentifier>{eb2c91e7-a05a-4caa-ab71-3e7517286a13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Boss\Dragon">
+      <UniqueIdentifier>{7a3c4cc6-5353-4d73-80de-83b09d363c8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\UI">
+      <UniqueIdentifier>{cfc4dcfc-c828-48b2-abdb-facdc2997f01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\MainMenu">
+      <UniqueIdentifier>{31064855-d08a-49a4-9c5e-8e409f8c7f3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameOver">
+      <UniqueIdentifier>{b4c2519c-ba5d-4776-8507-382e355fc332}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameClear">
+      <UniqueIdentifier>{2bccc170-721f-4f0e-8d3f-543a375e0e43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Item">
+      <UniqueIdentifier>{007ca0bc-eb97-488e-8114-59e7b9d50a7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Time">
+      <UniqueIdentifier>{4fcfe339-f3a2-4bb3-ae7e-96cb48050d84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Camera">
+      <UniqueIdentifier>{215e7ba6-a166-4c65-b86d-7b74fe0416e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main\GameBase.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\Object2D.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\ObjectCamera.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\TextureManager.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\Model.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\ModelManager.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Task\Hierarchy.cpp">
+      <Filter>Library\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Task\GameObject.cpp">
+      <Filter>Library\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\DirectX\DirectInputManager.cpp">
+      <Filter>Library\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\DirectX\Window.cpp">
+      <Filter>Library\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\DirectX\Direct3D.cpp">
+      <Filter>Library\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\Object3D_Model.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\Object3D_Polygon.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\ObjectPointLight.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\ObjectSpotLight.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\ObjectDirectionLight.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\LightIndex.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FarAtack.cpp">
+      <Filter>Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\NearAtack.cpp">
+      <Filter>Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Player.cpp">
+      <Filter>Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FarAtackFire.cpp">
+      <Filter>Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Floor.cpp">
+      <Filter>Object\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Shadow.cpp">
+      <Filter>Object\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\LeftWall.cpp">
+      <Filter>Object\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\RightWall.cpp">
+      <Filter>Object\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FrontWall.cpp">
+      <Filter>Object\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BackWall.cpp">
+      <Filter>Object\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FireExplosion.cpp">
+      <Filter>Object\Effect\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\NearAtackImpact.cpp">
+      <Filter>Object\Effect\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Deathblow.cpp">
+      <Filter>Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\WizardImpact.cpp">
+      <Filter>Object\Effect\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\WizardFog.cpp">
+      <Filter>Object\Effect\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ShadowBall.cpp">
+      <Filter>Object\Boss\Wizard</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Wizard.cpp">
+      <Filter>Object\Boss\Wizard</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\WizardWeapon.cpp">
+      <Filter>Object\Boss\Wizard</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Devil.cpp">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Meteo.cpp">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SkeltonBullet.cpp">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SkeltonCorps.cpp">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Task\Empty.cpp">
+      <Filter>Library\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MeteoParent.cpp">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SkeltonCorpsParent.cpp">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SkeletonBulletParent.cpp">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CollisionHardMode.cpp">
+      <Filter>Object\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\PlayerFog.cpp">
+      <Filter>Object\Effect\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FireExplosionParent.cpp">
+      <Filter>Object\Effect\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\NearAtackImpactParent.cpp">
+      <Filter>Object\Effect\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\WizardImpactParent.cpp">
+      <Filter>Object\Effect\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\WizardFogParent.cpp">
+      <Filter>Object\Effect\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CollisionEasyMode.cpp">
+      <Filter>Object\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Beam.cpp">
+      <Filter>Object\Effect\All</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BeamHolder.cpp">
+      <Filter>Object\Effect\All</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BeamParent.cpp">
+      <Filter>Object\Effect\All</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Blood.cpp">
+      <Filter>Object\Effect\All</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BloodParent.cpp">
+      <Filter>Object\Effect\All</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BulletFog.cpp">
+      <Filter>Object\Effect\All</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BulletFogParent.cpp">
+      <Filter>Object\Effect\All</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FadeIn.cpp">
+      <Filter>Object\Effect\All</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FadeOut.cpp">
+      <Filter>Object\Effect\All</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectType\Collision.cpp">
+      <Filter>Library\ObjectType</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ActionStop.cpp">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ActionStopParent.cpp">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Dragon.cpp">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CollisionNormalMode.cpp">
+      <Filter>Object\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CleaveImpactParent.cpp">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CleaveImpact.cpp">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Fire.cpp">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DragonMeteoParent.cpp">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DragonMeteo.cpp">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Rader.cpp">
+      <Filter>Object\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\PlayerUI.cpp">
+      <Filter>Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FieldFlower.cpp">
+      <Filter>Object\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Tree.cpp">
+      <Filter>Object\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MainMenu.cpp">
+      <Filter>Object\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\PlayerFogParent.cpp">
+      <Filter>Object\Effect\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MainMenuTitle.cpp">
+      <Filter>Object\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\EasyBotton.cpp">
+      <Filter>Object\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\NormalBotton.cpp">
+      <Filter>Object\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\HardBotton.cpp">
+      <Filter>Object\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ExitBotton.cpp">
+      <Filter>Object\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MainMenuCollision.cpp">
+      <Filter>Object\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\DirectX\MouthPosition.cpp">
+      <Filter>Library\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Task\SceneManager.cpp">
+      <Filter>Library\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SlashLeft.cpp">
+      <Filter>Object\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SlashRight.cpp">
+      <Filter>Object\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SlashCenter.cpp">
+      <Filter>Object\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameOver.cpp">
+      <Filter>Object\GameOver</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameClearCamera.cpp">
+      <Filter>Object\GameClear</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameClearFog.cpp">
+      <Filter>Object\GameClear</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameClearFogParent.cpp">
+      <Filter>Object\GameClear</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GameClear.cpp">
+      <Filter>Object\GameClear</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\DirectX\DirectSound.cpp">
+      <Filter>Library\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DeathblowEffect.cpp">
+      <Filter>Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Pause.cpp">
+      <Filter>Object\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Item.cpp">
+      <Filter>Object\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ItemCollision.cpp">
+      <Filter>Object\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ItemFog.cpp">
+      <Filter>Object\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ItemFogParent.cpp">
+      <Filter>Object\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Time.cpp">
+      <Filter>Object\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\FrameMatrixTransformer.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\AnimationController.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\AnimationMeshDrawer.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ObjectData\D3DXAllocateHierarchy.cpp">
+      <Filter>Library\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Field.cpp">
+      <Filter>Object\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SkyDome.cpp">
+      <Filter>Object\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FieldCollision.cpp">
+      <Filter>Object\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DragonParent.cpp">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FireParent.cpp">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\HelpBotton.cpp">
+      <Filter>Object\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\HelpMenu.cpp">
+      <Filter>Object\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\NearAtackAnimation.cpp">
+      <Filter>Object\Effect\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\NearAtackAnimationParent.cpp">
+      <Filter>Object\Effect\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Danger.cpp">
+      <Filter>Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\DirectX\JoyStick.cpp">
+      <Filter>Library\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CameraSelect.cpp">
+      <Filter>Object\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DeathblowCamera.cpp">
+      <Filter>Object\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BeamCamera.cpp">
+      <Filter>Object\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\PlayerCamera.cpp">
+      <Filter>Object\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\InvincibleCamera.cpp">
+      <Filter>Object\Camera</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Library\Debug\FPSController.h">
+      <Filter>Library\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Debug\MemoryLeakDebug.h">
+      <Filter>Library\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Debug\DebugWindow.h">
+      <Filter>Library\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\Object2D.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\ObjectCamera.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\TextureManager.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\Model.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\ModelManager.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Task\Hierarchy.h">
+      <Filter>Library\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Task\Empty.h">
+      <Filter>Library\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Task\GameObject.h">
+      <Filter>Library\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DirectX\DirectInputManager.h">
+      <Filter>Library\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DirectX\Window.h">
+      <Filter>Library\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DirectX\Direct3D.h">
+      <Filter>Library\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\GameBase.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\Object3D_Model.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\Object3D_Polygon.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\ObjectDirectionLight.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\ObjectPointLight.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\ObjectSpotLight.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\LightIndex.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FarAtack.h">
+      <Filter>Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\NearAtack.h">
+      <Filter>Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Player.h">
+      <Filter>Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Test2D.h">
+      <Filter>Object\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Test3D.h">
+      <Filter>Object\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TestBuff.h">
+      <Filter>Object\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TestCamera.h">
+      <Filter>Object\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TestLight.h">
+      <Filter>Object\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FarAtackFire.h">
+      <Filter>Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Floor.h">
+      <Filter>Object\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Shadow.h">
+      <Filter>Object\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\LeftWall.h">
+      <Filter>Object\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\RightWall.h">
+      <Filter>Object\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FrontWall.h">
+      <Filter>Object\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BackWall.h">
+      <Filter>Object\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FireExplosion.h">
+      <Filter>Object\Effect\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\NearAtackImpact.h">
+      <Filter>Object\Effect\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Deathblow.h">
+      <Filter>Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\WizardImpact.h">
+      <Filter>Object\Effect\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\WizardFog.h">
+      <Filter>Object\Effect\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MainLight.h">
+      <Filter>Object\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FieldStone.h">
+      <Filter>Object\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Task\SceneManager.h">
+      <Filter>Library\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\WizardWeapon.h">
+      <Filter>Object\Boss\Wizard</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ShadowBall.h">
+      <Filter>Object\Boss\Wizard</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Wizard.h">
+      <Filter>Object\Boss\Wizard</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Devil.h">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Meteo.h">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SkeltonCorps.h">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SkeltonBullet.h">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MeteoParent.h">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SkeltonCorpsParent.h">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SkeletonBulletParent.h">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CollisionHardMode.h">
+      <Filter>Object\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\PlayerFog.h">
+      <Filter>Object\Effect\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FireExplosionParent.h">
+      <Filter>Object\Effect\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\NearAtackImpactParent.h">
+      <Filter>Object\Effect\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\WizardImpactParent.h">
+      <Filter>Object\Effect\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\WizardFogParent.h">
+      <Filter>Object\Effect\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CollisionEasyMode.h">
+      <Filter>Object\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FadeOut.h">
+      <Filter>Object\Effect\All</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Beam.h">
+      <Filter>Object\Effect\All</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BeamHolder.h">
+      <Filter>Object\Effect\All</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BeamParent.h">
+      <Filter>Object\Effect\All</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Blood.h">
+      <Filter>Object\Effect\All</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BloodParent.h">
+      <Filter>Object\Effect\All</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BulletFog.h">
+      <Filter>Object\Effect\All</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BulletFogParent.h">
+      <Filter>Object\Effect\All</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FadeIn.h">
+      <Filter>Object\Effect\All</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectType\Collision.h">
+      <Filter>Library\ObjectType</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ActionStop.h">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ActionStopParent.h">
+      <Filter>Object\Boss\Devil</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Dragon.h">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CollisionNormalMode.h">
+      <Filter>Object\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CleaveImpact.h">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CleaveImpactParent.h">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Fire.h">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DragonMeteoParent.h">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DragonMeteo.h">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Rader.h">
+      <Filter>Object\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\PlayerUI.h">
+      <Filter>Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FieldFlower.h">
+      <Filter>Object\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Tree.h">
+      <Filter>Object\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MainMenu.h">
+      <Filter>Object\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\PlayerFogParent.h">
+      <Filter>Object\Effect\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MainMenuTitle.h">
+      <Filter>Object\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\EasyBotton.h">
+      <Filter>Object\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\NormalBotton.h">
+      <Filter>Object\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\HardBotton.h">
+      <Filter>Object\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ExitBotton.h">
+      <Filter>Object\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MainMenuCollision.h">
+      <Filter>Object\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DirectX\MouthPosition.h">
+      <Filter>Library\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SlashLeft.h">
+      <Filter>Object\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SlashRight.h">
+      <Filter>Object\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SlashCenter.h">
+      <Filter>Object\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameOver.h">
+      <Filter>Object\GameOver</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameClearCamera.h">
+      <Filter>Object\GameClear</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameClearFog.h">
+      <Filter>Object\GameClear</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameClearFogParent.h">
+      <Filter>Object\GameClear</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GameClear.h">
+      <Filter>Object\GameClear</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DirectX\DirectSound.h">
+      <Filter>Library\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DeathblowEffect.h">
+      <Filter>Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Pause.h">
+      <Filter>Object\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Item.h">
+      <Filter>Object\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ItemCollision.h">
+      <Filter>Object\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ItemFogParent.h">
+      <Filter>Object\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ItemFog.h">
+      <Filter>Object\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Time.h">
+      <Filter>Object\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\D3DXAllocateHierarchy.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\FrameMatrixTransformer.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\AnimationController.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ObjectData\AnimationMeshDrawer.h">
+      <Filter>Library\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Field.h">
+      <Filter>Object\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SkyDome.h">
+      <Filter>Object\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FieldCollision.h">
+      <Filter>Object\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MainLightLR.h">
+      <Filter>Object\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MainLightRL.h">
+      <Filter>Object\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MainLightRR.h">
+      <Filter>Object\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MainLightLL.h">
+      <Filter>Object\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DragonParent.h">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FireParent.h">
+      <Filter>Object\Boss\Dragon</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\HelpBotton.h">
+      <Filter>Object\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\HelpMenu.h">
+      <Filter>Object\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\NearAtackAnimation.h">
+      <Filter>Object\Effect\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\NearAtackAnimationParent.h">
+      <Filter>Object\Effect\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Danger.h">
+      <Filter>Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DirectX\JoyStick.h">
+      <Filter>Library\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CameraSelect.h">
+      <Filter>Object\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DeathblowCamera.h">
+      <Filter>Object\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BeamCamera.h">
+      <Filter>Object\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\PlayerCamera.h">
+      <Filter>Object\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\InvincibleCamera.h">
+      <Filter>Object\Camera</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
